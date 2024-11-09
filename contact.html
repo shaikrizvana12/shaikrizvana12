@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetable Order Form & To-Do List</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Contact Form Section -->
+        <h1>Order Vegetables</h1>
+        <form id="order-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="vegetables">Select Vegetables</label>
+                <select id="vegetables" name="vegetables" required multiple>
+                    <option value="Carrot">Carrot</option>
+                    <option value="Tomato">Tomato</option>
+                    <option value="Broccoli">Broccoli</option>
+                    <option value="Spinach">Spinach</option>
+                    <option value="Potato">Potato</option>
+                </select>
+            </div>
+
+            <button type="submit">Submit Order</button>
+        </form>
+
+        <!-- To-Do List Section -->
+        <h2>Vegetable To-Do List</h2>
+        <div class="form-group">
+            <label for="add-vegetable-select">Add Vegetable to List</label>
+            <select id="add-vegetable-select">
+                <option value="Carrot">Carrot</option>
+                <option value="Tomato">Tomato</option>
+                <option value="Broccoli">Broccoli</option>
+                <option value="Spinach">Spinach</option>
+                <option value="Potato">Potato</option>
+            </select>
+            <button id="add-vegetable">Add to List</button>
+        </div>
+
+        <!-- To-Do List Display -->
+        <ul id="todo-list">
+            <!-- Dynamic list items will appear here -->
+        </ul>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
